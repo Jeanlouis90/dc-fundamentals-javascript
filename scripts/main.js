@@ -80,4 +80,21 @@ if (var1 == var2 || var1 == 3) {
 
 // SWITCHES
 
-var fruit = 'apple';
+var fruit = 'kiwi';
+switch (fruit) {
+  case "banana":
+    alert('I like bananas');
+    break;
+  case "apple":
+    alert('I love apples');
+    break;
+  case "orange":
+    alert('I love oranges');
+    break;
+  default:
+    alert('I like all other fruits');
+    break;
+}
+
+// OBJECTS
+
