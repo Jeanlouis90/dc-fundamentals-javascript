@@ -17,7 +17,7 @@
 // alert(main[7]);
 // alert(main);
 
-// alert('length = ', main.length);
+// alert('length = ' + main.length);
 
 // alert("rivals");
 
@@ -36,11 +36,48 @@
 // alert(rivals[7]);
 // alert(rivals);
 
-// alert('length = ', rivals.length);
+// alert('length = ' + rivals.length);
 
 // var colors = new Array('cyan',' magenta', ' yellow', ' black');
 
 // FOR LOOPS
-console.log('HELLO');
-for (let i = 0; i < 10; i++) {
+// console.log('HELLO');
+// for (let i = 0; i < 10; i++) {
+//   console.log(i);
+// }
+// for (let i = 0; i <= 20; i++) {
+//   console.log('I love the number ' +i);   
+// }
+// ForEach Loop
+// var numbers = [33, 54, 76, 34, 2, 6];
+// numbers.forEach(function (number){
+//   console.log(number);
+// });
+
+// For Loop Version of Previous
+// var numbers = [33, 54, 76, 34, 2, 6];
+// for (var i = 0; i < numbers.length; i++){
+//   console.log(numbers[i])
+// }
+
+// WHILE LOOPS
+// var i = 0;
+// while (i < 10) {
+//   console.log(i);
+//   i++;   
+// }
+
+// CONDITIONALS
+
+// IF STATEMENTS
+var var1 = 3;
+var var2 = 4;
+if (var1 == var2 || var1 == 3) {
+  console.log('This is true');
+} else {
+  console.log('This is false');
 }
+
+// SWITCHES
+
+var fruit = 'apple';
