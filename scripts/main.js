@@ -82,7 +82,7 @@ if (var1 == var2 || var1 == 3) {
 
 var fruit = 'kiwi';
 switch (fruit) {
-  case "banana":
+  case 'banana':
     alert('I like bananas');
     break;
   case "apple":
@@ -98,3 +98,71 @@ switch (fruit) {
 
 // OBJECTS
 
+// Type A - Object Literal
+
+// var person = {
+//   firstName: 'Jean',
+//   lastName: 'Jabouin',
+//   age: '27',
+//   children: ['Jean', 'Travis', 'George', 'Lynn'],
+//   address: {
+//     street: '555 something ave',
+//     city: 'Fort Lauderdale',
+//     state: 'FL'
+//   },
+//   fullName: function (){
+//     return this.firstName + ' ' + this.lastName
+//   }
+// }
+
+// console.log(person.firstName)
+// console.log(person.age)
+// console.log(person.children[1])
+// console.log(person.address)
+// console.log(person.fullName());
+
+// Type B - Object Constructor (Not good for multiple objects because you have to do this again)
+
+// var apple = new Object()
+// apple.color = 'red'
+// apple.shape = 'round'
+
+// adding a function
+// apple.describe = function (){
+//   return 'An apple is the color ' + this.color + ' and has a ' + this.shape + ' shape.'
+// }
+
+// console.log(apple);
+// console.log(apple.describe())
+
+//  Type C - Constructor Pattern (Great for multiple objects. Use this for that scenario!)
+
+function Fruit (name, color, shape){
+  this.name = name
+  this.color = color
+  this.shape = shape
+
+}
+
+var apple = new Fruit('apple', 'red', 'round')
+var melon = new Fruit('melon', 'green', 'round')
+
+console.log(melon.color)
+
+var users = [
+  {
+      name: 'John Doe',
+      age: 30
+  },
+  {
+      name: 'Mark Smith',
+      age: 44
+  },
+  {
+      name: 'Shelly Williams',
+      age: 20
+  }
+];
+console.log(users[0])
+console.log(users[1])
+console.log(users[2])
