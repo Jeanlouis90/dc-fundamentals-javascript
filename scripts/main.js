@@ -137,32 +137,57 @@ switch (fruit) {
 
 //  Type C - Constructor Pattern (Great for multiple objects. Use this for that scenario!)
 
-function Fruit (name, color, shape){
-  this.name = name
-  this.color = color
-  this.shape = shape
+// function Fruit (name, color, shape){
+//   this.name = name
+//   this.color = color
+//   this.shape = shape
 
+// }
+
+// var apple = new Fruit('apple', 'red', 'round')
+// var melon = new Fruit('melon', 'green', 'round')
+
+// console.log(melon.color)
+
+// Array of Objects
+// var users = [
+//   {
+//       name: 'John Doe',
+//       age: 30
+//   },
+//   {
+//       name: 'Mark Smith',
+//       age: 44
+//   },
+//   {
+//       name: 'Shelly Williams',
+//       age: 20
+//   }
+// ];
+
+
+// console.log(users[0])
+// console.log(users[1])
+// console.log(users[2])
+
+//  EVENTS
+function doClick() {
+  alert('You clicked!')
+};
+
+// Adds the date
+
+function showDate(){
+  var time = document.getElementById('time')
+  time.innerHTML = Date();
 }
 
-var apple = new Fruit('apple', 'red', 'round')
-var melon = new Fruit('melon', 'green', 'round')
+function clearDate(){
+    var time = document.getElementById('time')
+    time.innerHTML = ''
 
-console.log(melon.color)
-
-var users = [
-  {
-      name: 'John Doe',
-      age: 30
-  },
-  {
-      name: 'Mark Smith',
-      age: 44
-  },
-  {
-      name: 'Shelly Williams',
-      age: 20
-  }
-];
-console.log(users[0])
-console.log(users[1])
-console.log(users[2])
+}
+  // Changes the button -->
+// function changeText(id){
+//   id.innerHTML = 'You clicked!'
+// }
