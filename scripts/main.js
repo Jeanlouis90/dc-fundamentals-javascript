@@ -187,6 +187,33 @@ function clearDate(){
     time.innerHTML = ''
 
 }
+
+// FORMS
+
+// Changes the background
+// function changeBackground(x){
+//   console.log(x.value);
+//   var body = document.getElementById('heading');
+//   heading.style.color = x.value;
+// }
+
+// Validates the Form
+function validateForm(){
+  var firstName = document.forms['myForm']['firstName'].value
+
+  if (firstName == null || firstName === '') {
+    alert('First name is required')
+    return false
+  }
+
+  if (firstName.length < 3) {
+    alert('First name must be AT LEAST 3 characters')
+    return false
+  }
+
+}
+
+
   // Changes the button -->
 // function changeText(id){
 //   id.innerHTML = 'You clicked!'
